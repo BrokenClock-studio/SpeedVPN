@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
+            "map": [
+                {
+                    "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\values-nl\\strings.xml",
+                    "from": {
+                        "startLines": "2,5,4,16,13,7,11,19,21,10,9,3,12,6,14,15,18,17,20,8",
+                        "startColumns": "2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2",
+                        "startOffsets": "53,197,136,835,658,287,536,976,1094,457,408,93,597,239,709,757,935,878,1027,357",
+                        "endColumns": "39,41,60,42,50,69,60,50,54,78,48,42,60,47,47,77,40,56,66,50",
+                        "endOffsets": "90,236,194,875,706,354,594,1024,1146,533,454,133,655,284,754,832,973,932,1091,405"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,97,141,204,249,302,374,437,490,547,628,679,724,787,837,887,967,1010,1069,1239",
+                        "endColumns": "41,43,62,44,52,71,62,52,56,80,50,44,62,49,49,79,42,58,68,52",
+                        "endOffsets": "92,136,199,244,297,369,432,485,542,623,674,719,782,832,882,962,1005,1064,1133,1287"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\values-nl\\values-nl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "21",
+                        "startColumns": "4",
+                        "startOffsets": "1138",
+                        "endColumns": "100",
+                        "endOffsets": "1234"
+                    }
+                }
+            ]
+        }
+    ]
+}

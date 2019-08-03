@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="batch_mode_entries">
+    <item>Deaktiviert</item>
+    <item>Nur bei leeren Feldern nachfragen</item>
+    <item>Niemals nach Zugangskennungen fragen</item>
+  </string-array>
+    <string-array name="connection_states">
+    <item>Unbekannt</item>
+    <item>Authentifizierung</item>
+    <item>Auf Benutzereingabe wartend</item>
+    <item>Authentifiziert</item>
+    <item>Verbindend</item>
+    <item>Verbunden</item>
+    <item>Getrennt</item>
+  </string-array>
+    <string-array name="faq_text">
+    <item>Wofür wird die Anwendung verwendet?</item>
+    <item>OpenConnect wird verwendet um Zugriff auf virtuelle private Netzwerke (VPNs), welche das Cisco AnyConnect SSL VPN Protokoll verwenden, zu erlangen. Ein typisches Einsatzszenario wäre, dass du dich von unterwegs aus auf deinen Arbeitsplatz einloggen willst um nach der Arbeit deine geschäftlichen E-Mails zu lesen.\n\nIm Zweifelsfall kontaktiere deinen IT Administrator um zu klären ob ein entsprechender Service verfügbar ist.</item>
+    <item>Wie lege ich los?</item>
+    <item>In den meisten Fällen ist es nur nötig ein Profil anzulegen und den Hostnamen des VPN Gateways einzutragen. Die anderen Felder im Profil sind alle optional und sollten nicht beachtet werden außer es besteht die Notwendigkeit diese zu ändern.\n\nSobald du das Profil aufgesetzt hast wählst du den VPN Eintrag an und OpenConnect wird versuchen eine neue Sitzung zu erstellen. Wenn dies fehlschlägt könnte dir der „Log\" Reiter hilfreiche Diagnoseinformationen liefern.</item>
+    <item>Wie authentifiziere ich mich mittels SSL Client Zertifikat?</item>
+    <item>Kopiere deine Zertifikatdateien auf Androids externes Speicherverzeichnis (normalerweise /sdcard oder der Downloads Ordner), editiere dann das VPN Profil und nehme nachfolgende Änderungen vor:\n\nP12 oder PFX Datei: Wähle „Benutzer Zertifikat\", wähle die Datei aus der Liste und berühre „Auswählen\". Lasse „Privater Schlüssel\" leer.\n\nEinzelne PEM/CRT/CER Datei: Siehe P12 oder PFX Datei.\n\nGetrennte PEM/CRT/CER und KEY Dateien: Fülle „Benutzer Zertifikat\" mit der Zertifikatdatei und „Privater Schlüssel\" mit der Schlüsseldatei.\n\nNachdem du fertig bist lösche die Zertifikatdateien vom externen Speicher, damit sie nicht von anderen Programmen missbraucht werden können.\n\nWenn du deine eigenen Schlüssel generierst (z.B. in Kombination mit einem eigenen ocserv Gateway) findest du einige grundlegende CA Einrichtungsanleitungen [hier](http://forum.xda-developers.com/showpost.php?p=52119253&amp;postcount=25).</item>
+    <item>Funktioniert OpenConnect mit nicht-AnyConnect VPNs?</item>
+    <item>Das Softwaredesign ist sehr nahe an den AnyConnect Voraussetzungen und der libopenconnect Schnittstelle orientiert.  Deshalb funktioniert es leider nur mit Cisco AnyConnect und ocserv Gateways.</item>
+    <item>Wird OpenConnect mit Cisco IPsec VPNs funktionieren welche auf einem ASA Cluster laufen?</item>
+    <item>OpenConnect unterstützt ausschließlich SSL VPN (CSTP + DTLS).</item>
+    <item>Wie importiere ich eine SecurID Software Schlüsselfolge?</item>
+    <item>Wenn du in deiner E-Mail eine URL hast die mit „com.rsa.securid.iphone://\" oder „http://127.0.0.1/securid/\" beginnt, klicke darauf und teile OpenConnect mit diese zu deinem gewünschten VPN Profil hinzuzufügen. Wenn du nur eine rohe Schlüsselfolge hast dann schreibe diese in eine Textdatei, kopiere sie nach /sdcard, klicke \"Schlüsselfolge\" im VPN Profileditor und wähle dann den Dateinamen.\n\nWenn du eine \"sdtid\" XML Datei hast, kopiere sie nach /sdcard und importiere sie anschließend.</item>
+    <item>Ist es möglich alle Nachfragen beim Login zu überspringen?</item>
+    <item>Wenn du deinen Benutzernamen, das Passwort, oder andere Zugangskennungen gespeichert hast, andernfalls, wenn du die SecurID or Zertifkatsauthentifizierung verwendest, kannst du versuchen den „Batch Modus\" im VPN Profil zu aktivieren um die Logindialoge zu überspringen. Wenn du dein gespeichertes Passwort im Nachhinein ändern musst oder du Probleme beim Verbinden haben solltest, so deaktiviere den Batch Modus einfach wieder.\n\nDer VPN Warnungsdialog ist eine Sicherheitsmaßnahme des Android Betriebssystems. Dieser kann nicht durch OpenConnect umgangen werden, außer wenn dein Gerät gerootet ist rooted, dann kannst du versuchen das Xposed Framework zu installieren und das Auto VPN Dialog Confirm Modul zu aktivieren. Eine Hinweise hierzu findest du [hier](http://forum.xda-developers.com/showpost.php?p=52037630&amp;postcount=21).\n\nAufgrund dieser notwendigen Benutzerinteraktionen ist es nicht immer möglich die VPN Verbindung im Hintergrund zuverlässig herzustellen. Daher wird momentan keine „start-on-boot\" Funktionalität angeboten.</item>
+    <item>Wie verbessere ich die Akkulaufzeit während VPN läuft?</item>
+    <item>Eine Möglichkeit besteht darin „Im Schlaf pausieren\" in den Einstellungen zu wählen. Der Nachteil ist, dass der VPN Zugang vorübergehen getrennt wird wenn der Bildschirm aus ist. Ferner fühlen sich ASA Gateways manchmal durch stetige Wiederverbindungen gestört und trennen ihre Sitzung nach einigen Tagen vorzeitig.\n\nEine weitere Möglichkeit ist es ihren Server Administrator zu kontaktieren und anzufragen, ob sie die dead peer detection (DPD) deaktivieren, den idle timeout auf >1 Stunde erhöhen und das keepalive interval auf ~5 Minuten ändern.</item>
+    <item>Wie verwende ich OpenConnect in Verbindung mit AFWall+?</item>
+    <item>Hierbei gibt es einige Punkte die sie bei der Verwendung einer Android Firewall in Kombination mit VPN im Hinterkopf haben sollten:\n\n* Wenn du KitKat benutzt, verwende Android 4.4.2 oder höher und AFWall 1.2.8 oder höher. Android 4.4 und 4.4.1 haben einen schwerwiegenden TCP MSS Fehler, welcher aussetzende Verbindungen und/oder schlechte Performanz hervorruft. AFWall &lt;=1.2.7 hat nicht die notwendige Logik um sich verändernde Routen in KitKat zu berücksichtigen.\n* Erlaube Traffic von der VPN Anwendung immer auf allen Schnittstellen. Insbesondere solltest du den VPN Datenverkehr von OpenConnect auf die WhiteList setzen, da OpenConnect alle paar Minuten DNS Anfragen über die VPN Schnittstelle sendet, um dafür zu sorgen, dass die Verbindung nicht wegen Zeitüberschreitung getrennt wird.</item>
+    <item>Sind irgendwelche Anwendungen inkompatibel mit VPN?</item>
+    <item>Anwendungen welche ihre eigene DNS Auflösung durchführen, beispielsweise Firefox, könnten Probleme damit haben die aktuellen systemweiten DNS Einstellungen zu erkennen, wenn eine VPN Verbindung aufgebaut wird. Dies kann dann zum Problem werden wenn deine systemweiten DNS Server nicht über das VPN Routing ansprechbar sind oder wenn du versuchst Hostnamen anzusprechen, welche keinen öffentlichen (Internet) DNS Eintrag haben.</item>
+    <item>Unter welchen Umständen wird OpenConnect root Rechte verlangen?</item>
+    <item>Es gibt zwei Funktionen in den Einstellungen welche nur mit root Rechten funktionieren; beide sind standardmäßig deaktiviert. Die eine Einstellung umgeht einen Fehler in CM9 ROMs welcher falsche Berechtigungen auf /dev/tun setzt, was den VpnService daran hindert Datenverkehr an die Tunnel Schnittstelle weiter zu leiten; die andere Einstellung lädt tun.ko in ROMs die darauf verzichten dies standardmäßig zu tun.\n\nBasierend auf Rückmeldungen durch Benutzer und Test könnten zukünftige Versionen diese Umstände gegebenenfalls automatisch erkennen.</item>
+    <item>Wie sende ich einen Problembericht?</item>
+    <item>Navigiere zu Log -> (Menü) -> Logdatei senden. Bitte vergewissere dich eine vollständige und genaue Beschreibung der Fehler, welche dir aufgefallen sind, zu verfassen, da die Logdatei alleine uns sonst zum Hellsehen verdammt und unsere Glaskugel nicht die beste ist ;).</item>
+    <item>Wer hat hier so schlecht ins Deutsche übersetzt?!?</item>
+    <item>Dafür verantwortlich war Ingo „IZSkiSurfer\" Zansinger &lt;ingo@zansinger.de></item>
+  </string-array>
+    <string-array name="reported_os_entries">
+    <item>Android</item>
+    <item>Linux (32-bit)</item>
+    <item>Linux (64-bit)</item>
+    <item>Windows</item>
+    <item>Mac</item>
+    <item>iOS</item>
+  </string-array>
+    <string-array name="software_token_entries">
+    <item>Deaktiviert</item>
+    <item>RSA SecurID</item>
+    <item>TOTP</item>
+  </string-array>
+    <string-array name="split_tunnel_mode_entries">
+    <item>Automatisch</item>
+    <item>An - DNS benutzt VPN</item>
+    <item>An - DNS benutzt ausgehende Verbindung</item>
+  </string-array>
+    <string name="about_openconnect">Über OpenConnect</string>
+    <string name="add">Hinzufügen</string>
+    <string name="add_new_vpn_hint">Benutzen Sie &lt;img src=\"ic_menu_add\"/> um ein neues VPN anzulegen</string>
+    <string name="add_profile_hostname_prompt">Hostname, IP-Adresse oder URL eintragen:</string>
+    <string name="advanced">Erweitert</string>
+    <string name="allow_vpn_changes">Änderungen an VPN Profilen erlauben</string>
+    <string name="allowed_apps">Freigegebene Apps: %s</string>
+    <string name="answer_abbrev">A:</string>
+    <string name="app">Speed VPN</string>
+    <string name="authentication">Authentifizierung</string>
+    <string name="batch_mode">Batch Modus</string>
+    <string name="ca_certificate">CA Zertifikat</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="cannotparsecert">Kann Zertifikatsinformationen nicht anzeigen.</string>
+    <string name="cant_read_folder">Verzeichnis kann nicht gelesen werden</string>
+    <string name="cert_warning_always_connect">Immer verbinden</string>
+    <string name="cert_warning_just_once">Nur diesmal</string>
+    <string name="cert_warning_message">Das Zertifikat von VPN Server „%1$s“ konnte nicht verifiziert werden.\n\nGrund: „%2$s“\nSHA1: %3$s\n\nTrotzdem verbinden?</string>
+    <string name="cert_warning_title">Zertifikatwarnung</string>
+    <string name="choose_existing_vpn">Wähle das für diese Schlüsselfolge zu verwendende VPN Profil oder füge ein neues hinzu:</string>
+    <string name="clear">Clear</string>
+    <string name="clear_log">Log löschen.</string>
+    <string name="clear_saved_passwords">Gespeicherte Passwörter löschen</string>
+    <string name="clear_saved_passwords_confirm">Willst du wirklich alle gespeicherten Zugangskennungen löschen?</string>
+    <string name="clear_token">Schlüsselfolge löschen</string>
+    <string name="clearappsdialog">Liste der freigegeben externen Apps löschen? \nAktuelle Liste der freigegebenen Apps:\n\n%s</string>
+    <string name="client_certificate_title">Clientzertifikat</string>
+    <string name="configure_the_vpn">VPN konfigurieren</string>
+    <string name="copied_entry">Log Eintrag in die Zwischenablage kopiert</string>
+    <string name="copy">Kopieren</string>
+    <string name="custom_csd_wrapper">Benutzerdefinierter CSD Wrapper</string>
+    <string name="dev_id">SecurID Gerätekennung:</string>
+    <string name="device_specific">Geräte spezifische Hacks</string>
+    <string name="disable_username_caching">Loginkennungsspeicher deaktivieren</string>
+    <string name="disable_username_caching_summary">Loginnamen, Benutzergruppen oder Passwörter nie speichern</string>
+    <string name="disable_xml_post">XML POST deaktivieren</string>
+    <string name="disable_xml_post_summary">Benutze die alte Authentifizierungsvermittlung; könnte auf neueren Servern fehlschlagen</string>
+    <string name="disconnect">Trennen</string>
+    <string name="dpd_override">Überschreibe DPD Timeout</string>
+    <string name="dpd_override_summary">Verwende ein anderes Dead Peer Detection Timeout als das vom Server standardmäßig vorgegebene.</string>
+    <string name="dpd_value">DPD Timeout</string>
+    <string name="dpd_value_message">Trage hier das neue Timeout in Sekunden ein. Typischer Wertebereich 30 bis 600.</string>
+    <string name="edit_profile_title">Editiere \"%s\"</string>
+    <string name="enter_pin">PIN eingeben:</string>
+    <string name="enter_problem">PROBLEMBESCHREIBUNG HIER EINTRAGEN:</string>
+    <string name="enter_token_string">Schlüsselfolge eingeben:</string>
+    <string name="error_cant_connect">Fehler beim verbinden zum Host \'%1$s\'. Weitere Infos im Log.</string>
+    <string name="error_connection_failed">Verbindung fehlgeschlagen</string>
+    <string name="error_importing_file">Fehler beim importieren der Datei</string>
+    <string name="error_invalid_hostname">Ungültiger Hostname \'%1$s\'</string>
+    <string name="exp_date">Ablaufdatum:</string>
+    <string name="faq">FAQ</string>
+    <string name="faq_hint">Vergewissere dich die FAQ gelesen zu haben wenn du OpenConnect zum ersten mal verwenden solltest.</string>
+    <string name="feedback_plea">Sich einen kurzen Moment Zeit zu nehmen um eine Anwendung zu bewerten ist enorm wichtig für die Entwickler. Es erlaubt uns die Erfahrung stetig zu verbessern und hilft anderen Nutzern leichter zu entscheiden ob eine Anwendung für sie geeignet ist. Willst du uns kurz helfen?</string>
+    <string name="file_explorer_tab">Datei auswählen…</string>
+    <string name="file_icon">Datei Symbol</string>
+    <string name="file_nothing_selected">Nichts ausgewählt</string>
+    <string name="file_select">Auswählen…</string>
+    <string name="file_too_large">Datei ist zu groß</string>
+    <string name="finish">Fertig</string>
+    <string name="generalsettings">Einstellungen</string>
+    <string name="getproxy_error">Fehler beim Ermitteln der Proxy Einstellungen: %s</string>
+    <string name="gmt">Aktuelle Uhrzeit (GMT)</string>
+    <string name="help_with_translations">Beim Übersetzen helfen</string>
+    <string name="hostname_examples">Gültige Eingabeformate:\nvpn.beispiel.de (üblich verwendet)\nvpn.beispiel.de:443 (Host:Port)\nhttps://vpn.beispiel.de/meine-gruppen-url</string>
+    <string name="i_love_it">Ich liebe es</string>
+    <string name="import_error_message">Konnte Datei nicht vom Dateisystem importieren</string>
+    <string name="import_from_file">Aus Datei importieren...</string>
+    <string name="inline_file_data">[[Eingebettete Datei]]</string>
+    <string name="inline_file_tab">Eingebettete Datei</string>
+    <string name="local_ip">Lokale IP:</string>
+    <string name="location">Ort</string>
+    <string name="log">Log</string>
+    <string name="login_title">%s Login</string>
+    <string name="make_selection_inline">Ins Profil einbetten</string>
+    <string name="maybe_later">Eventuell später</string>
+    <string name="menu_add_profile">Profil hinzufügen</string>
+    <string name="needs_work">Bedarf noch kleiner Verbesserungen</string>
+    <string name="netchange">Netzwerkänderungen beachten</string>
+    <string name="netchange_summary">Aktivieren dieser Option zwingt OpenConnect dazu, beim Wechsel des Netzwerkes (WLAN zu Mobilfunk und umgekehrt), neu zu verbinden</string>
+    <string name="netstatus">Netzwerkstatus:</string>
+    <string name="new_pin">Neue PIN</string>
+    <string name="new_vpn_option">Neues VPN Profil hinzufügen...</string>
+    <string name="next">Weiter</string>
+    <string name="next_tokencode">Nächste Schlüsselfolge:</string>
+    <string name="no">Nein</string>
+    <string name="no_data">Keine Daten</string>
+    <string name="no_external_app_allowed">Keine App für die Verwendung der API freigegeben</string>
+    <string name="no_vpn_profiles_defined">Keine VPN Profile definiert.</string>
+    <string name="not_required">Nicht benötigt</string>
+    <string name="notification_input_needed">Benutzereingabe notwendig</string>
+    <string name="notification_touch_here">Hier berühren um zu OpenConnect zu gelangen</string>
+    <string name="ok">OK</string>
+    <string name="oneway_bytecount">%1$s/s %2$s</string>
+    <string name="owner_fix">/dev/tun Eigentümer setzen.</string>
+    <string name="owner_fix_summary">Versucht den Eigentümer von /dev/tun auf system zu ändern. Einige Cyanogenmod 9 ROM Versionen benötigen diese Option, damit die VPN API funktioniert. Benötigt root.</string>
+    <string name="permission_description">Anderen Anwendungen die Steuerung von OpenConnect gestatten</string>
+    <string name="private_key">Privater Schlüssel</string>
+    <string name="profile_label">Profil:</string>
+    <string name="profile_name">Profilname</string>
+    <string name="prompt">%1$s versucht %2$s zu steuern</string>
+    <string name="question_abbrev">F:</string>
+    <string name="reconnect">Verbindung wiederherstellen</string>
+    <string name="reconnect_to">Verbindung wiederherstellen zu %1$s</string>
+    <string name="remote_trust">Ich vertraue dieser App.</string>
+    <string name="remote_warning">Wenn Sie fortfahren, gestatten Sie der App OpenConnect für Android komplett zu kontrollieren und den gesamten Netzwerkverkehr abzufangen. <b> Akzeptieren Sie nur, wenn Sie der App vertrauen. </b> Anderenfalls riskieren Sie, dass Ihre Daten von schädlicher Software manipuliert werden.</string>
+    <string name="remove_vpn">VPN löschen</string>
+    <string name="remove_vpn_query">VPN Profile \'%s\' löschen?</string>
+    <string name="reported_os">Gemeldetes Betriebssystem</string>
+    <string name="require_pfs">PFS benötigt</string>
+    <string name="rx">RX:</string>
+    <string name="save_password">Passwort merken</string>
+    <string name="screenoff_summary">Pausiere die Verbindung wenn der Bildschirm aus ist um den Akku zu schonen.</string>
+    <string name="screenoff_title">Bei ausgeschalteten Bildschirm VPN Verbindung pausieren</string>
+    <string name="securid_encrypted">Die SecurID Schlüsselfolge dieses Profils ist verschlüsselt. Versuche es erneut zu importieren.</string>
+    <string name="securid_info">SecurID Info</string>
+    <string name="securid_internal_error">Auf das VPN Profil konnte nicht zugegriffen werden. Bitte wende dich an den Entwickler und melde diesen Fehler.</string>
+    <string name="securid_none_defined">Keines deiner VPN Profile beinhaltet eine SecurID Schlüsselfolge.\n\nUm eine hinzuzufügen, importiere eine „sdtid“ Datei oder klicke auf Die „http://127.0.0.1/securid“ Adresse in deiner E-Mail. Weitere Infos findest du in den FAQ.</string>
+    <string name="securid_parse_error">SecurID Schlüsselfolge dieses Profils konnte nicht verarbeitet werden.</string>
+    <string name="select_file">Auswählen</string>
+    <string name="send">Sende</string>
+    <string name="send_feedback">Feedback abgeben</string>
+    <string name="send_logfile">Sende Logdatei</string>
+    <string name="send_minidump">Minidump an Entwickler senden</string>
+    <string name="send_minidump_summary">Sendet Debugging Informationen des letzten Absturzes an den Entwickler</string>
+    <string name="server">Server</string>
+    <string name="server_address">Serveradresse</string>
+    <string name="server_name">Servername:</string>
+    <string name="setting_loadtun">Lade tun Modul</string>
+    <string name="setting_loadtun_summary">Versuche das tun.ko Kernel Modul zu laden. Benötigt root.</string>
+    <string name="skip">Überspringen</string>
+    <string name="software_token">Software Schlüsselfolge</string>
+    <string name="speed_waiting">Warte auf OpenConnect Status Nachricht…</string>
+    <string name="split_tunnel_mode">Split Tunnel Modus</string>
+    <string name="split_tunnel_networks">Split Tunnel Netzwerke</string>
+    <string name="split_tunnel_networks_message">Trage eine Kommata-getrennte Liste von Subnetzen ein, welche über VPN geroutet werden sollen. Beispiel:\n\n192.168.22.0/24, 10.15.0.0/16</string>
+    <string name="state_connected_to">Verbunden mit %1$s</string>
+    <string name="status">Status</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="statusline_bytecount">↓%2$s/s %1$s - ↑%4$s/s %3$s</string>
+    <string name="toggle_timestamps">Zeitstempel</string>
+    <string name="token_bad_devid_summary">Die angegebene Gerätekennung passt nicht zur Schlüsselfolge. Bitte prüfen und erneut versuchen.</string>
+    <string name="token_bad_devid_title">Gerätekennung ungültig</string>
+    <string name="token_bad_password_summary">Das angegebene Passwort für diese Schlüsselfolge stimmt nicht. Bitte prüfen und erneut versuchen.</string>
+    <string name="token_bad_password_title">Passwort ist ungültig</string>
+    <string name="token_bad_string_summary">Die angegebene Zeichenfolge konnte nicht verarbeitet werden. Bitte auf Fehler prüfen und erneut versuchen.</string>
+    <string name="token_bad_string_title">Schlüsselfolge ist ungültig</string>
+    <string name="token_need_devid">Diese Schlüsselfolge ist gerätespezifisch. Man findet die Gerätekennung für gewöhnlich im „About“ Reiter der RSA SecurID Anwendung. Trage die Gerätekennung hier ein:</string>
+    <string name="token_need_password">Passwort zum Entsperren der Schlüsselfolge:</string>
+    <string name="token_sn">Schlüsselfolge S/N:</string>
+    <string name="token_string">Schlüsselfolge</string>
+    <string name="token_string_examples_0">Gültige Formate:</string>
+    <string name="trace_log">TRACE Logmeldungen aktivieren</string>
+    <string name="trace_log_summary">Auskunftsfreudigkeit der Logmeldungen für Debugzwecke erhöhen. Dies wird die Performanz beeinflussen.</string>
+    <string name="tx">TX:</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="uptime">Laufzeit:</string>
+    <string name="user_certificate">Benutzerzertifikat</string>
+    <string name="using_pin">Verwendete PIN:</string>
+    <string name="vpn_list_title">Profile</string>
+    <string name="vpnbehaviour">VPN</string>
+    <string name="yes">Ja</string>
+</resources>

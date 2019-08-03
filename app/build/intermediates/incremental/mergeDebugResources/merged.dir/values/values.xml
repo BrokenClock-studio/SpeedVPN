@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="batch_mode_entries">
+        <item>Disabled</item>
+        <item>Prompt for empty fields only</item>
+        <item>Never prompt for credentials</item>
+    </string-array>
+    <string-array name="batch_mode_values" translatable="false">
+        <item>disabled</item>
+        <item>empty_only</item>
+        <item>enabled</item>
+    </string-array>
+    <string-array name="connection_states">
+        <item>Unknown</item>
+        <item>Authenticating</item>
+        <item>Prompting for user input</item>
+        <item>Authenticated</item>
+        <item>Connecting</item>
+        <item>Connected</item>
+        <item>Disconnected</item>
+    </string-array>
+    <string-array name="faq_text">
+        <item>What is this app used for?</item>
+        <item>OpenConnect is used to access virtual private networks (VPNs) which utilize the Cisco AnyConnect SSL VPN protocol.  A typical use case might involve logging into your workplace remotely to check email after hours.\n\nIf in doubt, check with your I.T. administrator to see if a suitable service is available.</item>
+
+        <item>How do I get started?</item>
+        <item>In most cases, you\'ll just need to create a profile and enter the hostname of the VPN gateway.  The other fields in the profile are all optional and should be left alone unless there is a specific need to change them.\n\nOnce you\'ve set up the profile, select the VPN entry and OpenConnect will attempt to establish a new session.  If this fails, the \"Log\" tab may provide helpful diagnostic information.</item>
+
+        <item>How do I authenticate using an SSL client certificate?</item>
+        <item>Copy your certificate files to Android\'s external storage directory (nominally /sdcard or the Downloads folder), then edit the VPN profile and make the following changes:\n\nP12 or PFX file: select \"User certificate\", pick the file from the list, then touch \"select\".  Leave \"Private key\" blank.\n\nSingle PEM/CRT/CER file: same as above.\n\nSeparate PEM/CRT/CER and KEY files: populate \"User certificate\" with the certificate file, and \"Private key\" with the key file.\n\nWhen finished, delete the certificate files from external storage so they cannot be stolen by other apps.\n\nIf you are generating your own keys (e.g. for use with your ocserv gateway), some basic CA setup instructions are posted [here](http://forum.xda-developers.com/showpost.php?p=52119253&amp;postcount=25).</item>
+
+        <item>Will OpenConnect work with non-AnyConnect VPNs?</item>
+        <item>Unfortunately the software design is tied very closely to the AnyConnect requirements and the libopenconnect interfaces.  Therefore it only works with Cisco AnyConnect and ocserv gateways.</item>
+
+        <item>Will OpenConnect work with Cisco IPsec VPNs running on an ASA?</item>
+        <item>OpenConnect supports SSL VPN (CSTP + DTLS) only.</item>
+
+        <item>How do I import a SecurID software token?</item>
+        <item>If you have an URL that starts with \"com.rsa.securid.iphone://\" or \"http://127.0.0.1/securid/\" in your email, click on it and tell OpenConnect to add it to the desired VPN profile.  If you just have a raw token string then write it to a text file, copy it under /sdcard, click \"Token string\" in the VPN profile editor, then select the filename.\n\nIf you have an \"sdtid\" XML file, copy it to /sdcard and then import it.</item>
+
+        <item>Is it possible to skip all login prompts when connecting?</item>
+        <item>If you have saved your username, password, or other credentials, or if you are using SecurID or certificate authentication, you can try enabling \"Batch Mode\" in the VPN profile to skip the login dialogs.  If you need to change your saved password later or have trouble connecting, just disable batch mode.\n\nThe VPN warning dialog is a security feature built into the Android OS.  If your device is rooted, you can bypass it by installing the [Xposed framework](http://forum.xda-developers.com/xposed/xposed-installer-versions-changelog-t2714053), enabling the OpenConnect module, then rebooting.\n\nDue to the user interaction required by these dialogs, it is not always possible to reliably start up the VPN in the background.  So a \"start-on-boot\" feature is not currently provided.</item>
+
+        <item>How do I improve battery life while the VPN is up?</item>
+        <item>One option is to select \"Pause when asleep\" under Settings.  The downside is that VPN access will be temporarily stopped when the screen is off.  Also, ASA gateways sometimes get annoyed with constant reconnections and may prematurely terminate your session after a few days.\n\nAnother option is to contact your server administrator and request that they disable dead peer detection (DPD), increase the idle timeout to >1hr, and increase the keepalive interval to ~5min or so.</item>
+
+        <item>How do I use OpenConnect with AFWall+?</item>
+        <item>There are a few caveats to keep in mind when using an Android firewall with VPN:\n\n* If you run KitKat, use Android 4.4.2 or higher and AFWall 1.2.8 or higher.  Android 4.4 and 4.4.1 have a serious TCP MSS bug which causes stalled connections and/or poor performance.  AFWall &lt;=1.2.7 does not have the extra logic needed to handle the routing changes in KitKat.\n* Always allow traffic from the VPN app on all interfaces.  In particular, you should whitelist VPN traffic from OpenConnect, as OpenConnect sends DNS requests over the VPN interface every few minutes to help keep the connection from timing out.</item>
+
+        <item>Are any apps incompatible with VPN?</item>
+        <item>Apps which perform their own DNS resolution, such as Firefox, may have issues picking up the latest system DNS settings when connecting to the VPN.  This can be a problem if your system DNS servers are not accessible over the VPN\'s routes, or if you are trying to look up hostnames that do not have public (internet) DNS entries.</item>
+
+        <item>Under what circumstances will OpenConnect request root?</item>
+        <item>There are two root-only features shown under Settings; both are disabled by default.  One setting works around a ROM bug in CM9 which sets incorrect permissions on /dev/tun, preventing VpnService from passing traffic to the tunnel interface; the other setting loads tun.ko on ROMs that neglect to load it by default.\n\nBased on user feedback and testing, future releases may autodetect these conditions.</item>
+
+        <item>How do I send a problem report?</item>
+        <item>Navigate to Log -> (menu) -> Send log file.  Please be sure to furnish a complete, accurate description of the issue you are seeing, as the logs do not always show a smoking gun.</item>
+    </string-array>
+    <string-array name="log_timestamp_entries" translatable="false">
+        <item>@string/timestamp_short</item>
+        <item>@string/timestamp_long</item>
+        <item>@string/timestamp_none</item>
+    </string-array>
+    <string-array name="log_timestamp_values" translatable="false">
+        <item>short</item>
+        <item>long</item>
+        <item>none</item>
+    </string-array>
+    <string-array name="reported_os_entries">
+        <item>Android</item>
+        <item>Linux (32-bit)</item>
+        <item>Linux (64-bit)</item>
+        <item>Windows</item>
+        <item>Mac</item>
+        <item>iOS</item>
+    </string-array>
+    <string-array name="reported_os_values" translatable="false">
+        <item>android</item>
+        <item>linux</item>
+        <item>linux-64</item>
+        <item>win</item>
+        <item>mac-intel</item>
+        <item>apple-ios</item>
+    </string-array>
+    <string-array name="software_token_entries">
+        <item>Disabled</item>
+        <item>RSA SecurID</item>
+        <item>TOTP</item>
+    </string-array>
+    <string-array name="software_token_values" translatable="false">
+        <item>disabled</item>
+        <item>securid</item>
+        <item>totp</item>
+    </string-array>
+    <string-array name="split_tunnel_mode_entries">
+        <item>Auto</item>
+        <item>On - DNS uses VPN</item>
+        <item>On - DNS uses uplink</item>
+    </string-array>
+    <string-array name="split_tunnel_mode_values" translatable="false">
+        <item>auto</item>
+        <item>on_vpn_dns</item>
+        <item>on_uplink_dns</item>
+    </string-array>
+    <attr format="boolean" name="barrierAllowsGoneWidgets"/>
+    <attr format="enum" name="barrierDirection">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+        <enum name="top" value="2"/>
+        <enum name="bottom" value="3"/>
+        <enum name="start" value="5"/>
+        <enum name="end" value="6"/>
+    </attr>
+    <attr format="boolean" name="chainUseRtl"/>
+    <attr format="reference" name="constraintSet"/>
+    <attr format="string" name="constraint_referenced_ids"/>
+    <attr format="reference" name="content"/>
+    <attr name="emptyVisibility">
+        <enum name="gone" value="0"/>
+        <enum name="invisible" value="1"/>
+    </attr>
+    <attr format="boolean" name="layout_constrainedHeight"/>
+    <attr format="boolean" name="layout_constrainedWidth"/>
+    <attr format="integer" name="layout_constraintBaseline_creator"/>
+    <attr format="reference|enum" name="layout_constraintBaseline_toBaselineOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="integer" name="layout_constraintBottom_creator"/>
+    <attr format="reference|enum" name="layout_constraintBottom_toBottomOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintBottom_toTopOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference" name="layout_constraintCircle"/>
+    <attr format="integer" name="layout_constraintCircleAngle"/>
+    <attr format="dimension" name="layout_constraintCircleRadius"/>
+    <attr format="string" name="layout_constraintDimensionRatio"/>
+    <attr format="reference|enum" name="layout_constraintEnd_toEndOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintEnd_toStartOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="dimension" name="layout_constraintGuide_begin"/>
+    <attr format="dimension" name="layout_constraintGuide_end"/>
+    <attr format="float" name="layout_constraintGuide_percent"/>
+    <attr name="layout_constraintHeight_default">
+        <enum name="spread" value="0"/>
+        <enum name="wrap" value="1"/>
+        <enum name="percent" value="2"/>
+    </attr>
+    <attr format="dimension|enum" name="layout_constraintHeight_max">
+        <enum name="wrap" value="-2"/>
+    </attr>
+    <attr format="dimension|enum" name="layout_constraintHeight_min">
+        <enum name="wrap" value="-2"/>
+    </attr>
+    <attr format="float" name="layout_constraintHeight_percent"/>
+    <attr format="float" name="layout_constraintHorizontal_bias"/>
+    <attr format="enum" name="layout_constraintHorizontal_chainStyle">
+        <enum name="spread" value="0"/>
+        <enum name="spread_inside" value="1"/>
+        <enum name="packed" value="2"/>
+    </attr>
+    <attr format="float" name="layout_constraintHorizontal_weight"/>
+    <attr format="integer" name="layout_constraintLeft_creator"/>
+    <attr format="reference|enum" name="layout_constraintLeft_toLeftOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintLeft_toRightOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="integer" name="layout_constraintRight_creator"/>
+    <attr format="reference|enum" name="layout_constraintRight_toLeftOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintRight_toRightOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintStart_toEndOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintStart_toStartOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="integer" name="layout_constraintTop_creator"/>
+    <attr format="reference|enum" name="layout_constraintTop_toBottomOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintTop_toTopOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="float" name="layout_constraintVertical_bias"/>
+    <attr format="enum" name="layout_constraintVertical_chainStyle">
+        <enum name="spread" value="0"/>
+        <enum name="spread_inside" value="1"/>
+        <enum name="packed" value="2"/>
+    </attr>
+    <attr format="float" name="layout_constraintVertical_weight"/>
+    <attr name="layout_constraintWidth_default">
+        <enum name="spread" value="0"/>
+        <enum name="wrap" value="1"/>
+        <enum name="percent" value="2"/>
+    </attr>
+    <attr format="dimension|enum" name="layout_constraintWidth_max">
+        <enum name="wrap" value="-2"/>
+    </attr>
+    <attr format="dimension|enum" name="layout_constraintWidth_min">
+        <enum name="wrap" value="-2"/>
+    </attr>
+    <attr format="float" name="layout_constraintWidth_percent"/>
+    <attr format="dimension" name="layout_editor_absoluteX"/>
+    <attr format="dimension" name="layout_editor_absoluteY"/>
+    <attr format="dimension" name="layout_goneMarginBottom"/>
+    <attr format="dimension" name="layout_goneMarginEnd"/>
+    <attr format="dimension" name="layout_goneMarginLeft"/>
+    <attr format="dimension" name="layout_goneMarginRight"/>
+    <attr format="dimension" name="layout_goneMarginStart"/>
+    <attr format="dimension" name="layout_goneMarginTop"/>
+    <attr name="layout_optimizationLevel">
+        <flag name="none" value="0"/>
+        <flag name="standard" value="7"/> <!-- direct, barriers, chains -->
+        <flag name="direct" value="1"/>
+        <flag name="barrier" value="2"/>
+        <flag name="chains" value="4"/>
+        <flag name="dimensions" value="8"/>
+        <flag name="groups" value="32"/>
+    </attr>
+    <color name="black_overlay">#66000000</color>
+    <color name="notification_action_color_filter">#ffffffff</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
+    <dimen name="compat_button_inset_vertical_material">6dp</dimen>
+    <dimen name="compat_button_padding_horizontal_material">8dp</dimen>
+    <dimen name="compat_button_padding_vertical_material">4dp</dimen>
+    <dimen name="compat_control_corner_material">2dp</dimen>
+    <dimen name="notification_action_icon_size">32dp</dimen>
+    <dimen name="notification_action_text_size">13sp</dimen>
+    <dimen name="notification_big_circle_margin">12dp</dimen>
+    <dimen name="notification_content_margin_start">8dp</dimen>
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <dimen name="notification_main_column_padding_top">10dp</dimen>
+    <dimen name="notification_media_narrow_margin">@dimen/notification_content_margin_start</dimen>
+    <dimen name="notification_right_icon_size">16dp</dimen>
+    <dimen name="notification_right_side_padding_top">2dp</dimen>
+    <dimen name="notification_small_icon_background_padding">3dp</dimen>
+    <dimen name="notification_small_icon_size_as_large">24dp</dimen>
+    <dimen name="notification_subtext_size">13sp</dimen>
+    <dimen name="notification_top_pad">10dp</dimen>
+    <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="stdpadding">8dp</dimen>
+    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <item name="line1" type="id"/>
+    <item name="line3" type="id"/>
+    <item name="text" type="id"/>
+    <item name="text2" type="id"/>
+    <item name="title" type="id"/>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="about_openconnect">About OpenConnect</string>
+    <string name="add">Add</string>
+    <string name="add_new_vpn_hint">Use the &lt;img src=\"ic_menu_add\"/> icon to add a new VPN</string>
+    <string name="add_profile_hostname_prompt">Enter the hostname, IP address, or URL:</string>
+    <string name="advanced">Advanced</string>
+    <string name="allow_vpn_changes">Allow changes to VPN Profiles</string>
+    <string name="allowed_apps">Allowed apps: %s</string>
+    <string name="answer_abbrev">A:</string>
+    <string name="app">Speed VPN</string>
+    <string name="authentication">Authentication</string>
+    <string name="bad_rom_comment_prompt">If you have customized your device in any way (rooting, ROM, Xposed) please note the changes below:</string>
+    <string name="bad_rom_text">Unfortunately your Android device does not have proper VpnService support.  If you click OK we will report this to the vendor, but they may or may not fix the bug.</string>
+    <string name="batch_mode">Batch mode</string>
+    <string name="ca_certificate">CA certificate</string>
+    <string name="cancel">Cancel</string>
+    <string name="cannotparsecert">Cannot display certificate information</string>
+    <string name="cant_read_folder">Unable to read directory</string>
+    <string name="cert_warning_always_connect">Always connect</string>
+    <string name="cert_warning_just_once">Just once</string>
+    <string name="cert_warning_message">The certificate from VPN server \"%1$s\" failed verification.\n\nReason: \"%2$s\"\nSHA1: %3$s\n\nConnect anyway?</string>
+    <string name="cert_warning_title">Certificate warning</string>
+    <string name="choose_existing_vpn">Select the VPN profile that will be used with this token, or add a new one:</string>
+    <string name="clear">Clear</string>
+    <string name="clear_log">Clear log</string>
+    <string name="clear_saved_passwords">Clear saved passwords</string>
+    <string name="clear_saved_passwords_confirm">Are you sure you want to erase all stored credentials?</string>
+    <string name="clear_token">Clear token</string>
+    <string name="clearappsdialog">Clear list of allowed external apps?\nCurrent list of allowed apps:\n\n%s</string>
+    <string name="client_certificate_title">Client Certificate</string>
+    <string name="configure_the_vpn">Configure the VPN</string>
+    <string name="copied_entry">Copied to clipboard.</string>
+    <string name="copy">Copy</string>
+    <string name="crash_dialog_comment_prompt">Please describe what was happening when the problem occurred:</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the application to stop. You can help us fix this by sending us error data.</string>
+    <string name="custom_csd_wrapper">Custom CSD wrapper</string>
+    <string name="dev_id">SecurID device ID:</string>
+    <string name="device_specific">Device-specific Hacks</string>
+    <string name="disable_username_caching">Disable credential caching</string>
+    <string name="disable_username_caching_summary">Never cache login names, user groups, or passwords</string>
+    <string name="disable_xml_post">Disable XML POST</string>
+    <string name="disable_xml_post_summary">Use the old authentication handshake; may fail on newer servers</string>
+    <string name="disabled">disabled</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="dpd_override">Override DPD timeout</string>
+    <string name="dpd_override_summary">Use a custom Dead Peer Detection timeout instead of the server default</string>
+    <string name="dpd_value">DPD timeout</string>
+    <string name="dpd_value_message">Enter the new timeout value, in seconds. Typical values range from 30 to 600.</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="edit_profile_title">Editing \"%s\"</string>
+    <string name="enter_pin">Enter PIN:</string>
+    <string name="enter_problem">ENTER PROBLEM DESCRIPTION HERE:</string>
+    <string name="enter_token_string">Enter token string:</string>
+    <string name="error_cant_connect">Error connecting to host \'%1$s\'. See log for details.</string>
+    <string name="error_connection_failed">Connection failed</string>
+    <string name="error_importing_file">Error importing File</string>
+    <string name="error_invalid_hostname">Invalid hostname \'%1$s\'</string>
+    <string name="exp_date">Expiration date:</string>
+    <string name="faq">FAQ</string>
+    <string name="faq_hint">Be sure to also check out the FAQ if you have not used OpenConnect before.</string>
+    <string name="feedback_plea">Taking a few seconds to rate an app is very important for the developer.  It allows us to continually improve the experience, and helps other users decide whether an app is right for them. How about telling us what you think?</string>
+    <string name="file_explorer_tab">File Explorer</string>
+    <string name="file_icon">file icon</string>
+    <string name="file_nothing_selected">You must select a file</string>
+    <string name="file_select">Select…</string>
+    <string name="file_too_large">File is too large</string>
+    <string name="finish">Finish</string>
+    <string name="generalsettings">Settings</string>
+    <string name="getproxy_error">Error getting proxy settings: %s</string>
+    <string name="gmt">Current time (GMT):</string>
+    <string name="help_with_translations">Help with translations</string>
+    <string name="hostname_examples">Valid formats include:\nvpn.example.com (typical usage)\nvpn.example.com:443 (host:port)\nhttps://vpn.example.com/my-group-url</string>
+    <string name="i_love_it">I love it</string>
+    <string name="import_error_message">Could not import File from filesystem</string>
+    <string name="import_from_file">Import from file…</string>
+    <string name="inline_file_data">[[Inline file data]]</string>
+    <string name="inline_file_tab">Inline File</string>
+    <string name="local_ip4">Local IPv4:</string>
+    <string name="local_ip6">Local IPv6:</string>
+    <string name="location">Location</string>
+    <string name="log">Log</string>
+    <string name="login_title">%s login</string>
+    <string name="make_selection_inline">Copy into profile</string>
+    <string name="maybe_later">Maybe later</string>
+    <string name="menu_add_profile">Add Profile</string>
+    <string name="needs_work">Needs work</string>
+    <string name="netchange">Reconnect on network change</string>
+    <string name="netchange_summary">Turning this option on will force a reconnect if the network state is changed (e.g. WiFi to/from mobile)</string>
+    <string name="netstatus">Network Status:</string>
+    <string name="new_pin">New PIN</string>
+    <string name="new_vpn_option">Add new VPN profile…</string>
+    <string name="next">Next</string>
+    <string name="next_tokencode">Next tokencode:</string>
+    <string name="no">No</string>
+    <string name="no_data">No Data</string>
+    <string name="no_external_app_allowed">No app allowed to use external API</string>
+    <string name="no_vpn_profiles_defined">No VPN profiles defined.</string>
+    <string name="not_required">Not required</string>
+    <string name="notification_input_needed">User input needed</string>
+    <string name="notification_touch_here">Jump to Speed VPN</string>
+    <string name="ok">OK</string>
+    <string name="oneway_bytecount">%1$s/s %2$s</string>
+    <string name="owner_fix">Fix ownership of /dev/tun</string>
+    <string name="owner_fix_summary">Tries to set the owner of /dev/tun to the \'system\' UID (1000). Some CM9 images need this to make the VPNService API work. Requires root.</string>
+    <string name="permission_description">Allows another app to control OpenConnect</string>
+    <string name="private_key">Private key</string>
+    <string name="problem_dialog_comment_prompt">Please describe the nature of the problem. If you\'re willing to help the author troubleshoot it, make sure you include your email address:</string>
+    <string name="problem_dialog_text">Thanks for offering your feedback for improving OpenConnect. We\'re sorry you encountered an issue but we\'ll review your report and track down the bug.</string>
+    <string name="profile_label">Profile:</string>
+    <string name="profile_name">Profile name</string>
+    <string name="prompt">%1$s attempts to control %2$s</string>
+    <string name="question_abbrev">Q:</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="reconnect_to">Reconnect to %1$s</string>
+    <string name="remote_trust">I trust this application.</string>
+    <string name="remote_warning">By proceeding, you are giving the application permission to completely control OpenConnect for Android and to intercept all network traffic. <b> Do NOT accept unless you trust the application. </b> Otherwise, you run the risk of having your data compromised by malicious software."</string>
+    <string name="remove_vpn">Remove VPN</string>
+    <string name="remove_vpn_query">Remove the VPN Profile \'%s\'?</string>
+    <string name="report_problem">Report a problem</string>
+    <string name="reported_os">Reported OS</string>
+    <string name="require_pfs">Require PFS</string>
+    <string name="require_pfs_summary">Only negotiate cipher suites with Perfect Forward Secrecy.  If the server doesn\'t support PFS, the connection will fail.</string>
+    <string name="rx">RX:</string>
+    <string name="save_password">Save Password</string>
+    <string name="screenoff_summary">Pause the connection when the screen is off, to save battery life.</string>
+    <string name="screenoff_title">Pause when asleep</string>
+    <string name="securid_encrypted">This profile\'s SecurID token string is encrypted. Try re-importing it.</string>
+    <string name="securid_info">SecurID info</string>
+    <string name="securid_internal_error">Unable to access the VPN profile.  Please file a bug report with the author.</string>
+    <string name="securid_none_defined">None of your VPN profiles have a SecurID token string set.\n\nTo add one, import an \"sdtid\" file or click on a \"http://127.0.0.1/securid\" URL from your email.  See the FAQ for more information.</string>
+    <string name="securid_parse_error">Unable to parse the SecurID token string in this profile.</string>
+    <string name="select_file">Select</string>
+    <string name="send">Send</string>
+    <string name="send_minidump">Send Minidump to developer</string>
+    <string name="send_minidump_summary">Sends debugging information about last crash to developer</string>
+    <string name="server">Server</string>
+    <string name="server_address">Server address</string>
+    <string name="server_name">Server name:</string>
+    <string name="setting_loadtun">Load tun module</string>
+    <string name="setting_loadtun_summary">Try to load the tun.ko kernel module before trying to connect. Needs rooted devices.</string>
+    <string name="skip">Skip</string>
+    <string name="software_token">Software token</string>
+    <string name="speed_waiting">Waiting for state message…</string>
+    <string name="split_tunnel_mode">Split tunnel mode</string>
+    <string name="split_tunnel_networks">Split tunnel networks</string>
+    <string name="split_tunnel_networks_message">Enter a comma-separated list of subnets to route over the VPN link.  Example:\n\n192.168.22.0/24, 10.15.0.0/16</string>
+    <string name="state_connected_to">Connected to %1$s</string>
+    <string name="status">Status</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="statusline_bytecount">↓%2$s/s %1$s - ↑%4$s/s %3$s</string>
+    <string name="stored">[STORED]</string>
+    <string name="subnet_mask">Subnet mask:</string>
+    <string name="timestamp_format">Log timestamp format</string>
+    <string name="timestamp_long">Date + time</string>
+    <string name="timestamp_none">No timestamp</string>
+    <string name="timestamp_short">Time only</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="token_bad_devid_summary">The supplied device ID is not suitable for this token.  Please check for errors and resubmit.</string>
+    <string name="token_bad_devid_title">Device ID is not valid</string>
+    <string name="token_bad_password_summary">The supplied password is not suitable for this token.  Please check for errors and resubmit.</string>
+    <string name="token_bad_password_title">Password is not valid</string>
+    <string name="token_bad_string_summary">The supplied string cannot be parsed.  Please check for errors and resubmit.</string>
+    <string name="token_bad_string_title">Token string is not valid</string>
+    <string name="token_need_devid">This token is tied to a specific Device ID, usually found on the "About" screen in the RSA SecurID Software Token app.  Enter the Device ID here:</string>
+    <string name="token_need_password">Enter password to unlock token:</string>
+    <string name="token_sn">Token S/N:</string>
+    <string name="token_string">Token string</string>
+    <string name="token_string_examples_0">Valid formats include:</string>
+    <string name="token_string_examples_1" translatable="false">29624-04141-91521-01027-05321-47115-52307-30331-00256-47622-00007-44173-12504-44077-52716-73535-5</string>
+    <string name="token_string_examples_2" translatable="false">http://127.0.0.1/securid/ctf?ctfData=213797568467227240150540165305516771132574111177500436764173125710437026671675121</string>
+    <string name="token_string_examples_3" translatable="false">com.rsa.securid.iphone://ctf?ctfData=280670666747751343027701722017126407551472632305635574224173125614664606671656613</string>
+    <string name="trace_log">Enable TRACE logging</string>
+    <string name="trace_log_summary">Increase logging verbosity for debugging purposes. This will affect performance.</string>
+    <string name="tx">TX:</string>
+    <string name="unknown">Unknown</string>
+    <string name="uptime">Uptime:</string>
+    <string name="user_certificate">User certificate</string>
+    <string name="using_pin">Using PIN:</string>
+    <string name="vpn_list_title">Profiles</string>
+    <string name="vpnbehaviour">VPN behavior</string>
+    <string name="yes">Yes</string>
+    <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
+    <style name="TextAppearance.Compat.Notification.Info">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Info.Media"/>
+    <style name="TextAppearance.Compat.Notification.Line2" parent="TextAppearance.Compat.Notification.Info"/>
+    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="TextAppearance.Compat.Notification.Info.Media"/>
+    <style name="TextAppearance.Compat.Notification.Media"/>
+    <style name="TextAppearance.Compat.Notification.Time">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time.Media"/>
+    <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="TextAppearance.Compat.Notification.Title.Media"/>
+    <style name="Theme.CreateShortCut" parent="android:Theme.Holo.DialogWhenLarge"/>
+    <style name="Widget.Compat.NotificationActionContainer" parent=""/>
+    <style name="Widget.Compat.NotificationActionText" parent=""/>
+    <style name="accountSetupButton">
+        <item name="android:layout_width">160sp</item>
+        <item name="android:layout_height">40sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    <style name="faqhead">
+        <item name="android:paddingTop">10sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <!-- <item name="android:singleLine">true</item> -->
+    </style>
+    <style name="faqitem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    <style name="item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr format="reference" name="metaButtonBarStyle"/>
+        <attr format="reference" name="metaButtonBarButtonStyle"/>
+    </declare-styleable>
+    <declare-styleable name="ConstraintLayout_Layout"><attr name="android:orientation"/><attr name="android:minWidth"/><attr name="android:minHeight"/><attr name="android:maxWidth"/><attr name="android:maxHeight"/><attr name="layout_optimizationLevel"/><attr name="constraintSet"/><attr name="barrierDirection"/><attr name="barrierAllowsGoneWidgets"/><attr name="constraint_referenced_ids"/><attr name="chainUseRtl"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/></declare-styleable>
+    <declare-styleable name="ConstraintLayout_placeholder"><attr name="emptyVisibility"/><attr name="content"/></declare-styleable>
+    <declare-styleable name="ConstraintSet"><attr name="android:orientation"/><attr name="android:id"/><attr name="android:visibility"/><attr name="android:alpha"/><attr name="android:elevation"/><attr name="android:rotation"/><attr name="android:rotationX"/><attr name="android:rotationY"/><attr name="android:scaleX"/><attr name="android:scaleY"/><attr name="android:transformPivotX"/><attr name="android:transformPivotY"/><attr name="android:translationX"/><attr name="android:translationY"/><attr name="android:translationZ"/><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_marginStart"/><attr name="android:layout_marginBottom"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginEnd"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginRight"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/><attr name="barrierDirection"/><attr name="constraint_referenced_ids"/><attr name="android:maxHeight"/><attr name="android:maxWidth"/><attr name="android:minHeight"/><attr name="android:minWidth"/><attr name="barrierAllowsGoneWidgets"/><attr name="chainUseRtl"/></declare-styleable>
+    <declare-styleable name="FileSelectLayout">
+        <attr format="string|reference" name="title"/>
+        <attr format="boolean" name="certificate"/>
+        <!--     <attr name="taskid" format="integer" /> -->
+    </declare-styleable>
+    <declare-styleable name="FontFamily"><attr format="string" name="fontProviderAuthority"/><attr format="string" name="fontProviderPackage"/><attr format="string" name="fontProviderQuery"/><attr format="reference" name="fontProviderCerts"/><attr name="fontProviderFetchStrategy">
+            
+            <enum name="blocking" value="0"/>
+            
+            <enum name="async" value="1"/>
+        </attr><attr format="integer" name="fontProviderFetchTimeout">
+          
+            <enum name="forever" value="-1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="FontFamilyFont"><attr name="fontStyle">
+            <enum name="normal" value="0"/>
+            <enum name="italic" value="1"/>
+        </attr><attr format="reference" name="font"/><attr format="integer" name="fontWeight"/></declare-styleable>
+    <declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable>
+</resources>

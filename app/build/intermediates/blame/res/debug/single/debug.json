@@ -1,0 +1,730 @@
+[
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-hdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxhdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxhdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_header.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xhdpi\\header.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_file.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable\\file.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_folder.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable\\folder.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-hdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_loading.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\activity_loading.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-mdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxhdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxxhdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxxhdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_usa_one.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-hdpi\\usa_one.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_header.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-mdpi\\header.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxxhdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\menu_vpnpreferences_menu.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\menu\\vpnpreferences_menu.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxhdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-mdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_header.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxxhdpi\\header.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-mdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_sysbar_quicksettings.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_sysbar_quicksettings.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_alerts_and_states_warning.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\ic_alerts_and_states_warning.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_token_profile.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\token_profile.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_file_select.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\file_select.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxxhdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_header.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxhdpi\\header.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_stat_vpn_offline.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_stat_vpn_offline.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_alerts_and_states_warning.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxhdpi\\ic_alerts_and_states_warning.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\logo.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_color_selector.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable\\button_color_selector.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_stat_vpn_empty_halo.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_stat_vpn_empty_halo.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_spiner_item.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\spiner_item.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_usa_one.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxhdpi\\usa_one.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_clock.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_clock.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_file_dialog_row.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\file_dialog_row.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_vpn_list_item.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\vpn_list_item.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_trash_holo_light.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable\\ic_menu_trash_holo_light.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_menu_archive.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_archive.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_menu_trash_holo_light.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_menu_trash_holo_light.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_usa_one.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xhdpi\\usa_one.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-hdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_file_dialog_inline.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\file_dialog_inline.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_clock.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\ic_clock.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_stat_vpn_outline.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_stat_vpn_outline.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xhdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-mdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout-v16\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_clock.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_clock.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_menu_trash_holo_light.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_menu_trash_holo_light.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxhdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxxhdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_gradient.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable\\back_gradient.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_vpn_profile_list.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\vpn_profile_list.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_stat_vpn_offline.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_stat_vpn_offline.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_about.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\about.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\animator_fragment_slide_right_exit.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\animator\\fragment_slide_right_exit.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_token_diag_parent.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\token_diag_parent.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_stat_vpn.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_stat_vpn.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-hdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\animator_fragment_slide_left_enter.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\animator\\fragment_slide_left_enter.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\xml_pref_openconnect.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\xml\\pref_openconnect.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxhdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_stat_vpn_empty_halo.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_stat_vpn_empty_halo.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_token_diag_error.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\token_diag_error.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_token_diag_info.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\token_diag_info.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_menu_archive.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_menu_archive.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_senddump.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\fragment_senddump.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_file_dialog_main.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\file_dialog_main.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_add_new_vpn.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\add_new_vpn.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_file_dialog.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\file_dialog.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_header.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-hdpi\\header.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\menu_logmenu.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\menu\\logmenu.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_refresh.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_refresh.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_menu_trash_holo_light.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_trash_holo_light.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_logo.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxxhdpi\\logo.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxxhdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_feedback.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\feedback.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxhdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\animator_fragment_slide_left_exit.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\animator\\fragment_slide_left_exit.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_status.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\status.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logo.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxhdpi\\logo.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_token_unlock.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\token_unlock.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxxhdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_api_confirm.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\api_confirm.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_faq.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\faq.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxxhdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_disconnection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xhdpi\\disconnection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_alerts_and_states_warning.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable\\ic_alerts_and_states_warning.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_sysbar_quicksettings.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\ic_sysbar_quicksettings.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_sysbar_quicksettings.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable\\ic_sysbar_quicksettings.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_logwindow.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\logwindow.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logo.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\logo.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\xml_general_settings.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\xml\\general_settings.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_alerts_and_states_warning.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_alerts_and_states_warning.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\animator_fragment_slide_right_enter.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\animator\\fragment_slide_right_enter.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scroll.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable\\scroll.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_stat_vpn_outline.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_stat_vpn_outline.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_usa_one.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xxxhdpi\\usa_one.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_usa_one.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-mdpi\\usa_one.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_token_string.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\layout\\token_string.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\animator_fade_in.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\animator\\fade_in.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_alerts_and_states_warning.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_alerts_and_states_warning.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_connect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxhdpi\\connect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_sysbar_quicksettings.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xhdpi\\ic_sysbar_quicksettings.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_menu_archive.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\ic_menu_archive.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\animator_fade_out.xml.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\animator\\fade_out.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-hdpi\\logo.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_disconnect_button.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xhdpi\\disconnect_button.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\mipmap-xhdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_connection.png.flat",
+        "source": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\src\\main\\res\\drawable-mdpi\\connection.png"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\cc71b349eb87604e783c2440e8264b68\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "F:\\Room\\Apps\\Projects\\SpeedVPN\\SpeedVpn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\Jyoti Roy\\.gradle\\caches\\transforms-2\\files-2.1\\890fe83ac597a82937ea9935d74c833c\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    }
+]

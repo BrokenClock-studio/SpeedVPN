@@ -1,1 +1,2 @@
-# SpeedVPN
+Use android studio.
+READ THE LICENSE BEFORE WORKING ON IT.
