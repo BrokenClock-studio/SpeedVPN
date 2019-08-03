@@ -256,7 +256,7 @@ public class LoadingActivity extends Activity {
         for ( int j=0; j<data.Server_IPs.length; j++  /*  String s: data.Server_IPs*/) {
 
             FeedbackFragment.recordProfileAdd(this);
-            String s = ProfileManager.create(data.Server_IPs[j]).getUUID().toString();
+            String s = data.Server_IPs[j];
             DataManager.Server_UUIDS[j] = s;
             //IPs.add(s);
         }
